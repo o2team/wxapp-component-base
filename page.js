@@ -1,7 +1,7 @@
 /**
  * 页面基类
  */
- 
+
 const Base = require('./base.js');
 const Emitter = require('./utils/emitter.js');
 
@@ -59,8 +59,6 @@ class JDPage extends Base {
      * 为页面添加一些常用方法
      */
     initPlugins() {
-        this.obj.toast = this.toast;
-        this.obj.helper = this.helper;
         this.obj._events = {};
 
         // 添加方法
@@ -68,17 +66,6 @@ class JDPage extends Base {
         for(let fn of funcList) {
             this.obj[fn] = this[fn];
         }
-    }
-
-    /**
-     * 暂时没用
-     */
-    initConstructor() {
-        const {constructor} = this.obj;
-
-        if(!constructor || typeof constructor !== 'function') return;
-
-        constructor.call(this.obj);
     }
 
     /**
