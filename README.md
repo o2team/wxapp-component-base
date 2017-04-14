@@ -31,7 +31,7 @@ new JDPage({
 
 组件基础类，用于创建一个组件
 
-js
+component.js
 ```js
 const Component = require('../../../component.js');
 
@@ -63,7 +63,7 @@ class UserInfo extends Component {
 module.exports = UserInfo;
 ```
 
-wxml
+component.wxml
 ```html
 <template name="user-info">
     <!-- _tapComponent 是通过 addFunc 暴露出来的方法名 -->
