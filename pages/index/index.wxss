@@ -1,0 +1,6 @@
+/**index.wxss**/
+@import '../components/userinfo/index.wxss';
+
+.usermotto {
+  margin-top: 200px;
+}

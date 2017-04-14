@@ -1,0 +1,8 @@
+<!--index.wxml-->
+<import src="../components/userinfo/index.wxml" />
+<view class="container">
+  <template is="user-info" data="{{...userInfo}}" />
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view>
